@@ -12,9 +12,9 @@ public class CodeTxTest {
         //1. 创建数据源
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/spring04_javaee80?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC");
-        dataSource.setUsername("itcast");
-        dataSource.setPassword("12345678");
+        dataSource.setJdbcUrl("jdbc:mysql://47.105.158.112:10007/studytest?characterEncoding=utf8");
+        dataSource.setUsername("root");
+        dataSource.setPassword("zd521707");
         //2. 创建jdbc模版
         final JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource);
