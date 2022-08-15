@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <!--
+        根据用户username和address进行模糊查询
+        如果username不为空，才考虑username这个条件
+        如果address不为空才考虑address这个条件
+        if标签用于做条件判断
+
+
+        where标签则用于在if标签的外面，可以在第一个条件前添加where关键字，并且去掉第一个条件的and关键字
+    -->
+    <!--
+        使用SQL标签编写SQL片段
+        使用include标签引用sql片段
+    -->
+    <sql id="all">
+      SELECT id,username,sex,address,birthday FROM user
+    </sql>
+    <select id="searchUser" parameterType="QueryVo" resultType="User">
+            <include refid="all"/>
+        <where>
+            <if test="user.username != null and user.username != ''">
+                AND username LIKE '%${user.username}%'
+            </if>
+
+            <if test="user.address != null and user.address != ''">
+                AND address LIKE '%${user.address}%'
+            </if>
+        </where>
+    </select>
+
+
+
+    <!--
+        将用户传入的集合中的每一个数据遍历出来,然后再拼接到SQL语句里面
+        使用foreach标签遍历
+            collection属性是要遍历的数据类型，如果是集合就写成list
+            item属性表示遍历出来的每一个数据
+            open属性:表示在遍历出来的第一个数据之前拼接
+            close属性:表示在遍历出来的最后一个数据之后拼接
+    -->
+    <select id="queryByIds" parameterType="Integer" resultType="User">
+        <include refid="all"/>
+            <foreach collection="list" open="WHERE id in(" close=")" item="id" separator=",">
+              #{id}
+            </foreach>
+    </select>
+</mapper>

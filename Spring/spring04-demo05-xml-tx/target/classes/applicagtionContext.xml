@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+    <!--注册事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <constructor-arg name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--配置事务规则
+        transaction-manager: 事务管理器的id
+    -->
+    <tx:advice id="advice01" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--
+                tx:method.name  方法名(支持正则)
+                tx:method.propagation  事务的传播行为
+                tx:method.isolation  事务的隔离界别
+                tx:method.read-only  配置是否是只读事务(对所有的读操作配置成true,对所有的写操作配置成false)
+                tx:method.timeout  事务的超时时间,默认是-1(永不超时),建议配置成毫秒级别
+                tx:method.rollback-for  何种异常时回滚,当发生的异常不是你配置的异常时就不会滚,建议配置成Exception
+                tx:method.no-rollback-for 何种异常时不回滚,建议不要设置此项
+                一般情况下对所有的方法开启非只读的事务,对于特定的读操作开启只读的事务
+            -->
+            <tx:method name="*" read-only="false"/>
+            <tx:method name="find*" isolation="DEFAULT" propagation="REQUIRED" read-only="true" timeout="-1"/>
+            <tx:method name="get*" isolation="DEFAULT" propagation="REQUIRED" read-only="true" timeout="-1"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--配置AOP.配置切入点和切面-->
+    <aop:config>
+        <!--配置切入点-->
+        <aop:pointcut id="pointcut01" expression="execution(* com.itheima.service.impl.*.*(..))"/>
+        <!--配置切面
+            advice-ref:事务规则的id
+            pointcut-ref:切入点的id
+        -->
+       <aop:advisor advice-ref="advice01" pointcut-ref="pointcut01"/>
+    </aop:config>
+    <!--注册dao-->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <!--注册JdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--注册HikariCP -->
+    <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource">
+        <property name="password" value="${jdbc.password}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="jdbcUrl"
+                  value="${jdbc.url}"/>
+        <property name="driverClassName" value="${jdbc.driver}"/>
+    </bean>
+    <context:component-scan base-package="com.itheima"/>
+</beans>

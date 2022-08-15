@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo01-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo01-interface/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo01-interface/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo02-custom-ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo02-custom-ioc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo02-custom-ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo03-ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo03-ioc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo03-ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo04-di" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo04-di/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring01-demo04-di/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo01-homework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo01-homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo01-homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo02-anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo02-anno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo02-anno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo03-mix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo03-mix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo03-mix/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo04-anno-homework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo04-anno-homework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo04-anno-homework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo05-pure-anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo05-pure-anno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring02-demo05-pure-anno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo02-Advice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo02-Advice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo02-Advice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo03-anno" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo03-anno/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring03-demo03-anno/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring04-demo04-code-tx" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring04-demo04-code-tx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/spring04-demo04-code-tx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/zhujie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring/zhujie/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/spring_Xiang_Ying" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/spring_Xiang_Ying/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/spring_Xiang_Ying/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/springmvc_day01" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/springmvc_day01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/springmvc_day01/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java_demo/java_springmvc/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
