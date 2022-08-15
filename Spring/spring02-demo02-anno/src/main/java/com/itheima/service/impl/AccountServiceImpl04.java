@@ -14,7 +14,6 @@ import org.springframework.stereotype.Component;
  */
 @Component(value = "accountService04")
 public class AccountServiceImpl04 implements AccountService {
-
     @Autowired
     @Qualifier("accountDao02")
     private AccountDao accountDao;
