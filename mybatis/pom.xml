@@ -21,6 +21,6 @@
         <module>day48_mybatis_04</module>
         <module>day48_mybatis_05</module>
         <module>day48_mybatis_06</module>
-        <module>my_mybatis_demo_01</module>
+<!--        <module>my_mybatis_demo_01</module>-->
     </modules>
 </project>
