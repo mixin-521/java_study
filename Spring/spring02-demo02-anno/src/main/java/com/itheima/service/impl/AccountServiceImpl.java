@@ -17,8 +17,9 @@ import javax.annotation.PreDestroy;
 public class AccountServiceImpl implements AccountService {
     @Override
     public void save() {
-        System.out.println("AccountServiceImpl--------->save()");
+        System.out.println("AccountServiceImpl-->save()");
     }
+
     /**
      * 告诉IOC容器这是一个初始化方法
      */

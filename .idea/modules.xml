@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_DuoBiao/Mybatis_DuoBiao.iml" filepath="$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_DuoBiao/Mybatis_DuoBiao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_Zhu_Jie/Mybatis_Zhu_Jie.iml" filepath="$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_Zhu_Jie/Mybatis_Zhu_Jie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_duo_duo/Mybatis_duo_duo.iml" filepath="$PROJECT_DIR$/java_demo/java_mybatis/Mybatis_duo_duo/Mybatis_duo_duo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring/Spring_zhujie.iml" filepath="$PROJECT_DIR$/Spring/Spring_zhujie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_mybatis/Zhu_Jie_Duo_Biao/Zhu_Jie_Duo_Biao.iml" filepath="$PROJECT_DIR$/java_demo/java_mybatis/Zhu_Jie_Duo_Biao/Zhu_Jie_Duo_Biao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day46_mybatis_01/day46_mybatis_01.iml" filepath="$PROJECT_DIR$/mybatis/day46_mybatis_01/day46_mybatis_01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day46_mybatis_02/day46_mybatis_02.iml" filepath="$PROJECT_DIR$/mybatis/day46_mybatis_02/day46_mybatis_02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day47_mybatis_01/day47_mybatis_01.iml" filepath="$PROJECT_DIR$/mybatis/day47_mybatis_01/day47_mybatis_01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day47_mybatis_02/day47_mybatis_02.iml" filepath="$PROJECT_DIR$/mybatis/day47_mybatis_02/day47_mybatis_02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day47_mybatis_03/day47_mybatis_03.iml" filepath="$PROJECT_DIR$/mybatis/day47_mybatis_03/day47_mybatis_03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_01/day48_mybatis_01.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_01/day48_mybatis_01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_02/day48_mybatis_02.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_02/day48_mybatis_02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_03/day48_mybatis_03.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_03/day48_mybatis_03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_04/day48_mybatis_04.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_04/day48_mybatis_04.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_05/day48_mybatis_05.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_05/day48_mybatis_05.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/day48_mybatis_06/day48_mybatis_06.iml" filepath="$PROJECT_DIR$/mybatis/day48_mybatis_06/day48_mybatis_06.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_demo.iml" filepath="$PROJECT_DIR$/java_demo/java_demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_mybatis/java_mybatis.iml" filepath="$PROJECT_DIR$/java_demo/java_mybatis/java_mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_springmvc/java_springmvc.iml" filepath="$PROJECT_DIR$/java_demo/java_springmvc/java_springmvc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_study.iml" filepath="$PROJECT_DIR$/java_study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/my_spring_demo_01/my_spring_demo_01.iml" filepath="$PROJECT_DIR$/Spring/my_spring_demo_01/my_spring_demo_01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring01-demo01-interface/spring01-demo01-interface.iml" filepath="$PROJECT_DIR$/Spring/spring01-demo01-interface/spring01-demo01-interface.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring01-demo02-custom-ioc/spring01-demo02-custom-ioc.iml" filepath="$PROJECT_DIR$/Spring/spring01-demo02-custom-ioc/spring01-demo02-custom-ioc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring01-demo03-ioc/spring01-demo03-ioc.iml" filepath="$PROJECT_DIR$/Spring/spring01-demo03-ioc/spring01-demo03-ioc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring01-demo04-di/spring01-demo04-di.iml" filepath="$PROJECT_DIR$/Spring/spring01-demo04-di/spring01-demo04-di.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring02-demo01-homework/spring02-demo01-homework.iml" filepath="$PROJECT_DIR$/Spring/spring02-demo01-homework/spring02-demo01-homework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/zhujie/spring02-demo02-anno.iml" filepath="$PROJECT_DIR$/Spring/zhujie/spring02-demo02-anno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring02-demo03-mix/spring02-demo03-mix.iml" filepath="$PROJECT_DIR$/Spring/spring02-demo03-mix/spring02-demo03-mix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring02-demo04-anno-homework/spring02-demo04-anno-homework.iml" filepath="$PROJECT_DIR$/Spring/spring02-demo04-anno-homework/spring02-demo04-anno-homework.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring02-demo05-pure-anno/spring02-demo05-pure-anno.iml" filepath="$PROJECT_DIR$/Spring/spring02-demo05-pure-anno/spring02-demo05-pure-anno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring03-demo01/spring03-demo01.iml" filepath="$PROJECT_DIR$/Spring/spring03-demo01/spring03-demo01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring03-demo02-Advice/spring03-demo02-Advice.iml" filepath="$PROJECT_DIR$/Spring/spring03-demo02-Advice/spring03-demo02-Advice.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring03-demo03-anno/spring03-demo03-anno.iml" filepath="$PROJECT_DIR$/Spring/spring03-demo03-anno/spring03-demo03-anno.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo01-jdbctemplate/spring04-demo01-jdbctemplate.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo01-jdbctemplate/spring04-demo01-jdbctemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo02-jdbctemplate-spring/spring04-demo02-jdbctemplate-spring.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo02-jdbctemplate-spring/spring04-demo02-jdbctemplate-spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo03-cp/spring04-demo03-cp.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo03-cp/spring04-demo03-cp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo04-code-tx/spring04-demo04-code-tx.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo04-code-tx/spring04-demo04-code-tx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo05-xml-tx/spring04-demo05-xml-tx.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo05-xml-tx/spring04-demo05-xml-tx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Spring/spring04-demo06-anno-tx/spring04-demo06-anno-tx.iml" filepath="$PROJECT_DIR$/Spring/spring04-demo06-anno-tx/spring04-demo06-anno-tx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_springmvc/spring_Xiang_Ying/spring_Xiang_Ying.iml" filepath="$PROJECT_DIR$/java_demo/java_springmvc/spring_Xiang_Ying/spring_Xiang_Ying.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java_demo/java_springmvc/springmvc_day01/springmvc_day01.iml" filepath="$PROJECT_DIR$/java_demo/java_springmvc/springmvc_day01/springmvc_day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/spring02-demo02-anno/zhujie.iml" filepath="$PROJECT_DIR$/Spring/spring02-demo02-anno/zhujie.iml" />
     </modules>
   </component>
 </project>

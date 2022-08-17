@@ -45,50 +45,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="day46_mybatis_01" target="1.5" />
-      <module name="day46_mybatis_02" target="1.5" />
-      <module name="day47_mybatis_01" target="1.5" />
-      <module name="day47_mybatis_02" target="1.5" />
-      <module name="day47_mybatis_03" target="1.5" />
-      <module name="day48_mybatis_01" target="1.5" />
-      <module name="day48_mybatis_02" target="1.5" />
-      <module name="day48_mybatis_03" target="1.5" />
-      <module name="day48_mybatis_04" target="1.5" />
-      <module name="day48_mybatis_05" target="1.5" />
-      <module name="day48_mybatis_06" target="1.5" />
-      <module name="java_demo" target="1.5" />
-      <module name="java_mybatis" target="1.5" />
-      <module name="java_springmvc" target="1.7" />
-      <module name="java_study" target="1.5" />
       <module name="my_mybatis_demo_01" target="1.5" />
-      <module name="my_spring_demo_01" target="1.5" />
-      <module name="mybatis" target="1.5" />
-      <module name="Mybatis_duo_duo" target="1.5" />
-      <module name="Mybatis_DuoBiao" target="1.5" />
-      <module name="Mybatis_Zhu_Jie" target="1.5" />
-      <module name="Spring" target="1.5" />
-      <module name="spring01-demo01-interface" target="1.8" />
-      <module name="spring01-demo02-custom-ioc" target="1.8" />
-      <module name="spring01-demo03-ioc" target="1.8" />
-      <module name="spring01-demo04-di" target="1.8" />
-      <module name="spring02-demo01-homework" target="1.8" />
-      <module name="spring02-demo02-anno" target="1.8" />
-      <module name="spring02-demo03-mix" target="1.8" />
-      <module name="spring02-demo04-anno-homework" target="1.8" />
-      <module name="spring02-demo05-pure-anno" target="1.8" />
-      <module name="spring03-demo01" target="1.8" />
-      <module name="spring03-demo02-Advice" target="1.8" />
-      <module name="spring03-demo03-anno" target="1.8" />
-      <module name="spring04-demo01-jdbctemplate" target="1.8" />
-      <module name="spring04-demo02-jdbctemplate-spring" target="1.8" />
-      <module name="spring04-demo03-cp" target="1.8" />
-      <module name="spring04-demo04-code-tx" target="1.8" />
-      <module name="spring04-demo05-xml-tx" target="1.8" />
-      <module name="spring04-demo06-anno-tx" target="1.8" />
-      <module name="spring_Xiang_Ying" target="1.8" />
       <module name="Spring_zhujie" target="1.5" />
-      <module name="springmvc_day01" target="1.8" />
-      <module name="Zhu_Jie_Duo_Biao" target="1.5" />
+      <module name="zhujie" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

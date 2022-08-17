@@ -13,10 +13,7 @@
         <constructor-arg name="username" value="张三"/>
         <constructor-arg name="age" value="18"/>
     </bean>
-<!--
 
- Create default context
--->
     <!--
    setter-注入简单类型
        1 定义属性

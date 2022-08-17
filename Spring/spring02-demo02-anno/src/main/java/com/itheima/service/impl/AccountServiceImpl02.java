@@ -2,7 +2,11 @@ package com.itheima.service.impl;
 
 import com.itheima.service.AccountService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 /**
  * 注解方式-注入简单类型(@Value)
