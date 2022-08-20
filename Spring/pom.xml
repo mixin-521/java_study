@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.itheima</groupId>
+    <artifactId>Spring</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>spring01-demo01-interface</module>
+        <module>spring01-demo02-custom-ioc</module>
+        <module>spring01-demo03-ioc</module>
+        <module>spring01-demo04-di</module>
+        <module>spring02-demo01-homework</module>
+        <module>spring02-demo02-anno</module>
+        <module>spring02-demo03-mix</module>
+        <module>spring02-demo04-anno-homework</module>
+        <module>spring02-demo05-pure-anno</module>
+        <module>spring03-demo01</module>
+        <module>spring03-demo02-Advice</module>
+        <module>spring03-demo03-anno</module>
+        <module>spring04-demo01-jdbctemplate</module>
+        <module>spring04-demo02-jdbctemplate-spring</module>
+        <module>spring04-demo03-cp</module>
+        <module>spring04-demo04-code-tx</module>
+        <module>spring04-demo05-xml-tx</module>
+        <module>spring04-demo06-anno-tx</module>
+        <module>my_spring_demo_01</module>
+    </modules>
+
+</project>

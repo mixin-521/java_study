@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+        使用properties标签获取外部属性文件中的属性
+    -->
+    <properties resource="jdbcinfo.properties">
+    </properties>
+
+    <!--
+        typeAliases标签，配置自定义别名
+            type属性表示要配置别名的那个类的全限定名
+            alias表示别名
+
+        一个typeAlias标签只能给一个类配置别名，如果要统一给所有的POJO配置别名，那么就得使用包扫描
+    -->
+    <typeAliases>
+        <!--<typeAlias type="com.itheima.pojo.User" alias="user"/>-->
+
+        <!--
+            包扫描配置的别名就是该类的类名，不区分大小写
+        -->
+        <package name="com.itheima.pojo"/>
+    </typeAliases>
+    <environments default="mysql">
+        <environment id="mysql">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--加载映射配置文件-->
+    <mappers>
+        <!--<mapper resource="com/itheima/dao/UserDao.xml"/>-->
+        <!--使用包扫描加载所有的映射配置文件-->
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>

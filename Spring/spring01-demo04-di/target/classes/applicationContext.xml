@@ -1,0 +1,102 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--
+    构造方法-注入简单类型
+        1 定义属性
+        2 创建带参的构造方法
+     constructor-arg.name  要注入的属性名称
+     constructor-arg.namevalue 要注入的值
+    -->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+        <constructor-arg name="username" value="张三"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+    <!--
+   setter-注入简单类型
+       1 定义属性
+       2 创建setter
+    property.name 要注入的属性名
+    property.value 要注入的属性值
+   -->
+    <bean id="accountService02" class="com.itheima.service.impl.AccountServiceImpl02">
+        <property name="username" value="李四"/>
+        <property name="age" value="80"/>
+    </bean>
+
+    <!--
+   setter-注入数组
+       1 定义属性
+       2 创建setter
+    property.name 要注入的属性名
+    property.array.value 要注入的属性值
+   -->
+    <bean id="accountService03" class="com.itheima.service.impl.AccountServiceImpl03">
+        <!--<property name="hobbys" value="代码,篮球,足球"></property>-->
+        <property name="hobbys">
+            <array>
+
+                <value>代码</value>
+                <value>篮球</value>
+                <value>足球</value>
+            </array>
+        </property>
+    </bean>
+
+    <!--
+       setter-注入map
+           1 定义属性
+           2 创建setter
+        property.name 要注入的属性名
+        property.map.key 要注入的map的键
+        property.map.value 要注入的map的值
+   -->
+    <bean id="accountService04" class="com.itheima.service.impl.AccountServiceImpl04">
+        <property name="map">
+            <map>
+                <entry key="aa1" value="aa2"/>
+                <entry key="bb1" value="bb2"/>
+                <entry key="cc1" value="cc3"/>
+            </map>
+        </property>
+    </bean>
+
+    <!--
+       setter-注入JavaBean
+           0 将要使用的JavaBean注册到IOC容器中
+           1 定义属性
+           2 创建setter
+
+        property.name 要注入的属性名
+        property.map.key 要注入的map的键
+        property.map.value 要注入的map的值
+   -->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"/>
+    <bean id="accountService05" class="com.itheima.service.impl.AccountServiceImpl05">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+
+    <!--
+       p名称空间-注入简单类型
+
+   -->
+    <bean id="accountService06" class="com.itheima.service.impl.AccountServiceImpl06" p:age="20" p:username="王五"></bean>
+
+    <!--
+          SP el表达式-注入简单类型
+      -->
+    <bean id="user" class="com.itheima.pojo.User">
+        <property name="username" value="1111"/>
+        <property name="age" value="60"/>
+    </bean>
+    <bean id="accountService07" class="com.itheima.service.impl.AccountServiceImpl07">
+        <!--<property name="username" value="#{'赵六'}"/>-->
+        <property name="username" value="#{user.username}"/>
+        <property name="age" value="#{1920}"/>
+        <!--<property name="age" value="#{19+20}"/>-->
+    </bean>
+
+
+</beans>

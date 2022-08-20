@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itheima.dao.UserDao">
+    <insert id="addUser" parameterType="com.itheima.pojo.User">
+        <!--
+            在执行完成添加之后，将自增长的id赋值给传入的user对象
+            keyColumn表示要查询的字段名
+            keyProperty表示要设置到JavaBean对象的属性名
+            resultType表示查询到的返回值的类型
+            order表示这个标签是执行在添加之前还是之后?
+        -->
+        <selectKey keyColumn="id" keyProperty="id" resultType="int" order="AFTER">
+           SELECT LAST_INSERT_ID()
+        </selectKey>
+        INSERT INTO user VALUES (NULL ,#{username},#{birthday},#{sex},#{address})
+    </insert>
+    
+    <delete id="deleteUserById" parameterType="int">
+        DELETE FROM user where id=#{id}
+    </delete>
+
+    <select id="findUserById" parameterType="int" resultType="user">
+        SELECT * FROM user where id=#{id}
+    </select>
+
+    <update id="updateUser" parameterType="map">
+        UPDATE user SET username='${name}',sex='${sex}',address=#{address} WHERE id=#{id}
+    </update>
+    
+    <!--模糊查询-->
+    <select id="findByUsername" parameterType="string" resultType="user">
+        <!--SELECT * FROM user where username like "%"#{abc}"%"-->
+
+        <!--
+            使用${}引用简单类型的参数，只能够写成${value}
+        -->
+        SELECT * FROM user WHERE username like '%${value}%'
+    </select>
+
+    <select id="queryByVo" parameterType="queryVo" resultType="user">
+        SELECT * FROM user WHERE username like '%${user.username}%'
+    </select>
+
+    <select id="findUsernameById" parameterType="int" resultType="string">
+        SELECT username FROM user WHERE id=#{id}
+    </select>
+
+    <select id="queryUser" parameterType="int" resultType="map">
+        SELECT * FROM user WHERE id=#{id}
+    </select>
+
+    <!--
+        如果指定resultType属性，那么就会使用默认映射规则
+
+        要使用自定义映射规则，那么就得使用resultMap进行结果集映射
+
+        resultMap标签的属性:
+            type属性:表示的是要进行结果集映射的那个POJO类
+            子标签:
+                id标签，用于做主键的映射
+                result标签，用于做非主键的映射
+
+    -->
+    <resultMap id="UserInfoMap" type="UserInfo">
+        <id column="id" property="userId"/>
+        <result column="username" property="userName"/>
+        <result column="birthday" property="userBirthday"/>
+        <result column="sex" property="userSex"/>
+        <result column="address" property="userAddress"/>
+    </resultMap>
+
+    <!--使用resultMap属性引用具体的resultMap-->
+    <!--<select id="findAll" resultMap="UserInfoMap">
+        SELECT * FROM user
+    </select>-->
+    <!--
+        通过取别名的方式改变结果集的字段名
+    -->
+    <select id="findAll" resultType="userInfo">
+        SELECT id userId,username userName,birthday userBirthday,sex userSex,address userAddress FROM user
+    </select>
+</mapper>

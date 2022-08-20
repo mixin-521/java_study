@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <!--自定义映射规则进行一对多的映射-->
+    <resultMap id="userRoleMap" type="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <result column="address" property="address"/>
+        <result column="birthday" property="birthday"/>
+
+        <!--一对多的映射使用collection标签-->
+        <collection property="roleList" ofType="Role">
+            <result column="rid" property="rid"/>
+            <result column="rname" property="rname"/>
+            <result column="rdesc" property="rdesc"/>
+        </collection>
+    </resultMap>
+    <select id="findUserById" parameterType="int" resultMap="userRoleMap">
+        SELECT * FROM USER u,user_role ur,role r WHERE ur.uid=u.id AND ur.rid=r.rid AND u.id=#{id}
+    </select>
+</mapper>

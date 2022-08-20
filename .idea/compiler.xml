@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring04-demo02-jdbctemplate-spring" />
+        <module name="spring04-demo06-anno-tx" />
+        <module name="spring04-demo05-xml-tx" />
+        <module name="Mybatis_DuoBiao" />
+        <module name="spring04-demo03-cp" />
+        <module name="spring01-demo02-custom-ioc" />
+        <module name="Mybatis_duo_duo" />
+        <module name="day46_mybatis_02" />
+        <module name="day46_mybatis_01" />
+        <module name="spring02-demo05-pure-anno" />
+        <module name="spring01-demo01-interface" />
+        <module name="spring02-demo04-anno-homework" />
+        <module name="my_mybatis_demo_01" />
+        <module name="spring03-demo03-anno" />
+        <module name="day47_mybatis_01" />
+        <module name="spring_Xiang_Ying" />
+        <module name="day47_mybatis_03" />
+        <module name="day47_mybatis_02" />
+        <module name="Mybatis_Zhu_Jie" />
+        <module name="Zhu_Jie_Duo_Biao" />
+        <module name="spring01-demo04-di" />
+        <module name="day48_mybatis_03" />
+        <module name="springmvc_day01" />
+        <module name="day48_mybatis_04" />
+        <module name="day48_mybatis_01" />
+        <module name="day48_mybatis_02" />
+        <module name="my_spring_demo_01" />
+        <module name="spring03-demo02-Advice" />
+        <module name="spring04-demo01-jdbctemplate" />
+        <module name="spring02-demo02-anno" />
+        <module name="spring03-demo01" />
+        <module name="spring02-demo03-mix" />
+        <module name="day48_mybatis_05" />
+        <module name="day48_mybatis_06" />
+        <module name="spring01-demo03-ioc" />
+        <module name="spring04-demo04-code-tx" />
+        <module name="spring02-demo01-homework" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

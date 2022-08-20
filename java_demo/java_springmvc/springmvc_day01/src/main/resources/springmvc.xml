@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+<!--这个就是视图解析器的配置-->
+    <!--开启注解扫描      这个扫包是扫的你要在控制台执行程序的包-->
+    <context:component-scan base-package="cn.itcast"></context:component-scan>
+    <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--前边的  name是固定的    后边的value  是配置的web  jsp的  位置-->
+     <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--配置自定义类型转换器 下边还需要配置自定义转换器生效-->
+    <bean id="ConversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="cn.itcast.utils.StringToDateConverter"/>
+            </set>
+        </property>
+    </bean>
+    <!--开启springmvc注解的支持   开启这个就是可以使用注解的配置-->
+    <!--下边这句默认配上了   适配器   映射器-->
+    <mvc:annotation-driven conversion-service="ConversionService"></mvc:annotation-driven>
+</beans>

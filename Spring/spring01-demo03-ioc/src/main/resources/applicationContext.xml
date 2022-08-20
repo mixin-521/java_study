@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        springioc容器在初始化时会自动初始化所有的单例bean
+        bean:配置bean
+        bean.id|name: 当前bean在spring工厂里面的唯一标识符(可以随便写,不重复即可),建议写成实现类对应的接口名称,首字母小写
+                        若配置的类无接口时,写成当前类的名称,首字母小写
+        bean.class: 当前实现类的全限定名
+        bean.scope: 作用范围,默认是singleton
+                    prototype 多例 对象调用一次就实例化一次,生命周期由Java虚拟机容器管理
+                    singleton 单例 对象无论调用多少次次只实例化一次,生命周期由ioc容器管理
+        bean.init-method: 初始化方法
+        bean.destroy-method: 销毁方法
+    -->
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl" scope="singleton" init-method="initMethod" destroy-method="destoryMethod"/>
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" init-method="initMethod"/>
+
+    <bean id="instanceFactory" class="com.itheima.utils.InstanceFactory"/>
+
+    <bean id="accountService02" factory-bean="instanceFactory" factory-method="getBean"/>
+
+</beans>
