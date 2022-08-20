@@ -40,13 +40,13 @@
         <module name="day48_mybatis_06" />
         <module name="spring01-demo03-ioc" />
         <module name="spring04-demo04-code-tx" />
-        <module name="spring02-demo02-anno_1" />
         <module name="spring02-demo01-homework" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="my_mybatis_demo_01" target="1.5" />
       <module name="spring02-demo02-anno" target="1.8" />
+      <module name="spring02-demo02-anno_1" target="1.8" />
       <module name="Spring_zhujie" target="1.5" />
       <module name="zhujie" target="1.8" />
     </bytecodeTargetLevel>
