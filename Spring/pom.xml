@@ -15,7 +15,7 @@
         <module>spring01-demo03-ioc</module>
         <module>spring01-demo04-di</module>
         <module>spring02-demo01-homework</module>
-        <module>spring02-demo02-anno</module>
+<!--        <module>spring02-demo02-anno</module>-->
         <module>spring02-demo03-mix</module>
         <module>spring02-demo04-anno-homework</module>
         <module>spring02-demo05-pure-anno</module>
@@ -29,6 +29,7 @@
         <module>spring04-demo05-xml-tx</module>
         <module>spring04-demo06-anno-tx</module>
         <module>my_spring_demo_01</module>
+        <module>spring02-demo02-anno_1</module>
     </modules>
 
 </project>
