@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itheima.dao.AccountDao">
+    <!--自定义一对一的映射规则-->
+    <resultMap id="accountUserMap" type="Account">
+        <id column="aid" property="aid"/>
+        <result column="money" property="money"/>
+        <result column="uid" property="uid"/>
+
+        <!--第一种方式-->
+        <!--<result column="id" property="user.id"/>
+        <result column="username" property="user.username"/>
+        <result column="sex" property="user.sex"/>
+        <result column="birthday" property="user.birthday"/>
+        <result column="address" property="user.address"/>-->
+
+        <!--
+            第二种方式:使用association标签进行一对一的映射
+                property属性表示要进行一对一映射的属性名
+                javaType属性表示要进行一对一映射的那个属性的类型
+                接下来使用result子标签进行一对一的映射
+        -->
+        <association property="user" javaType="User">
+            <result column="id" property="id"/>
+            <result column="username" property="username"/>
+            <result column="address" property="address"/>
+            <result column="sex" property="sex"/>
+            <result column="birthday" property="birthday"/>
+        </association>
+    </resultMap>
+    <select id="findAccountByAid" parameterType="int" resultMap="accountUserMap">
+        SELECT * FROM account a,USER u WHERE a.uid=u.id AND a.aid=#{aid}
+    </select>
+</mapper>

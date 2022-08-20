@@ -29,7 +29,7 @@
         <module>spring04-demo05-xml-tx</module>
         <module>spring04-demo06-anno-tx</module>
         <module>my_spring_demo_01</module>
-        <module>zhujie</module>
+        <module>spring02-demo02-anno_1</module>
     </modules>
 
 </project>

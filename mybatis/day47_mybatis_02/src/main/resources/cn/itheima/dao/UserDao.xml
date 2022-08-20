@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.itheima.dao.UserDao">
+    <!--自定义映射规则，来进行一对多的映射-->
+    <resultMap id="userAccountMap" type="User">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="sex" property="sex"/>
+        <result column="birthday" property="birthday"/>
+        <result column="address" property="address"/>
+
+        <!--
+            使用collection标签进行一对多的映射
+                property属性表示要进行一对多映射的属性名
+                ofType属性表示要进行一对多映射的属性的泛型类型
+        -->
+        <collection property="accountList" ofType="Account">
+            <result column="aid" property="aid"/>
+            <result column="money" property="money"/>
+            <result column="uid" property="uid"/>
+        </collection>
+    </resultMap>
+    <select id="findUserById" parameterType="int" resultMap="userAccountMap">
+        SELECT * FROM USER u,account a WHERE a.uid=u.id AND u.id=#{id}
+    </select>
+</mapper>

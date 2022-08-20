@@ -17,9 +17,9 @@
             -->
             <dataSource type="POOLED">
                 <property name="username" value="root"/>
-                <property name="password" value="123456"/>
+                <property name="password" value="zd521707"/>
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://192.168.174.120:3306/mybatis?characterEncoding=utf-8"/>
+                <property name="url" value="jdbc:mysql://47.105.158.112:10007/studytest?characterEncoding=utf8"/>
             </dataSource>
         </environment>
     </environments>

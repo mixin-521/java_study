@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <!--注册dao-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl"></bean>
     <!--注册JdbcTemplate-->
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
         <property name="dataSource" ref="dataSource"/>
