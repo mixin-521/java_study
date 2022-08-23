@@ -8,5 +8,6 @@ public class CustomIocest {
     public static void main(String[] args) {
         AccountService accountService = (AccountService) BeanFactory02.getById("accountService");
         accountService.update();
+        System.out.println("jfl");
     }
 }
