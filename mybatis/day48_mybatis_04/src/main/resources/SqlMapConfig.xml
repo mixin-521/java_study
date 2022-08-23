@@ -6,7 +6,7 @@
     <properties resource="jdbcinfo.properties"/>
     <!--别名配置-->
     <typeAliases>
-        <package name="com.itheima.pojo"/>
+        <package name="cn.itheima.pojo"/>
     </typeAliases>
     <!--环境配置-->
     <environments default="mysql">
@@ -23,6 +23,6 @@
 
     <!--加载Dao的接口中的注解-->
     <mappers>
-        <package name="com.itheima.dao"/>
+        <package name="cn.itheima.dao"/>
     </mappers>
 </configuration>

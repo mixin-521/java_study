@@ -51,7 +51,7 @@ public class TestMyBatis {
     public void testFindAccountByAid(){
         //目前已知的条件是:用户的id为63，所以查询到的结果集要封装在User对象中
         //1. 根据id查询用户信息 下面那个些乱码的是你项目文件夹上面有中文
-        User user = userDao.findUserById(63);
+        User user = userDao.findUserById(3);
 
         //2. 根据uid查询账号的集合
         /*List<Account> accountListByUid = accountDao.findAccountListByUid(63);

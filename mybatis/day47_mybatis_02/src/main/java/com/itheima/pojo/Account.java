@@ -1,4 +1,4 @@
-package cn.itheima.pojo;
+package com.itheima.pojo;
 
 /**
  * 包名:com.itheima.pojo

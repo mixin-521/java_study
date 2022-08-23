@@ -51,7 +51,7 @@ public class TestMyBatis {
     public void testFindAccountByAid(){
         //目前已知条件是:aid=1，那么我们查询到的结果集要封装到Account对象中
         //1. 根据aid查询出账号信息(里面就包含uid)
-        Account account = accountDao.findAccountByAid(1);
+        Account account = accountDao.findAccountByAid(3);
 
         //2. 根据查询到的uid，到user表中查询用户信心
         /*User user = userDao.findUserById(account.getUid());

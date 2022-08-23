@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.itheima.dao.UserDao">
+<mapper namespace="com.itheima.dao.UserDao">
     <!--自定义映射规则，来进行一对多的映射-->
     <resultMap id="userAccountMap" type="User">
         <id column="id" property="id"/>

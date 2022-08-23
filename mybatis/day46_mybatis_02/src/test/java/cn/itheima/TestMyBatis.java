@@ -51,7 +51,7 @@ public class TestMyBatis {
     }
     @Test
     public void testAddUser(){
-        User user = new User(null, "小白", new Date(), "男", "中国");
+        User user = new User(null, "小红", new Date(), "女", "日本");
         userDao.addUser(user);
 
         //用户添加完成之后，这条数据就有一个自增长的id，我们要在代码中拿到这个自增长的id

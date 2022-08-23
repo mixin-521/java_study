@@ -22,7 +22,7 @@ public interface UserDao {
             //在使用注解进行自定义映射规则的时候，如果字段名和属性名能够对应上的，就可以不写,但是作为参数传递到外部查询方法中去的字段必须写
             @Result(column = "id",property = "id",id = true),
             //进行一对多查询映射
-            @Result(column = "id",property = "accountList",many = @Many(fetchType = FetchType.LAZY,select = "com.itheima.dao.AccountDao.findAccountListByUid"))
+            @Result(column = "id",property = "accountList",many = @Many(fetchType = FetchType.LAZY,select = "cn.itheima.dao.AccountDao.findAccountListByUid"))
     })
     @Select("select * from user where id=#{id}")
     User findUserById(int id);

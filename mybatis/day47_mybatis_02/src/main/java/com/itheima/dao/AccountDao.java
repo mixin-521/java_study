@@ -1,6 +1,6 @@
-package cn.itheima.dao;
+package com.itheima.dao;
 
-import cn.itheima.pojo.Account;
+import com.itheima.pojo.Account;
 
 /**
  * 包名:com.itheima.dao

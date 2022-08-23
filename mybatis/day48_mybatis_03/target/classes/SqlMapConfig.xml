@@ -26,6 +26,6 @@
 
     <!--加载映射配置文件-->
     <mappers>
-        <mapper resource="com/itheima/dao/UserDao.xml"/>
+        <mapper resource="cn/itheima/dao/UserDao.xml"/>
     </mappers>
 </configuration>

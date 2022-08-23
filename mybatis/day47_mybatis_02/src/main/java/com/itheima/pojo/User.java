@@ -1,4 +1,4 @@
-package cn.itheima.pojo;
+package com.itheima.pojo;
 
 import java.util.Date;
 import java.util.List;

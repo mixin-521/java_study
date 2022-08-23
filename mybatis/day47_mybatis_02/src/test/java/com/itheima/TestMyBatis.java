@@ -1,9 +1,9 @@
-package cn.itheima;
+package com.itheima;
 
-import cn.itheima.dao.AccountDao;
-import cn.itheima.dao.UserDao;
-import cn.itheima.pojo.Account;
-import cn.itheima.pojo.User;
+import com.itheima.dao.AccountDao;
+import com.itheima.dao.UserDao;
+import com.itheima.pojo.Account;
+import com.itheima.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -51,14 +51,14 @@ public class TestMyBatis {
     @Test
     public void testFindAccountByAid(){
         //调用AccountDao对象的方法，根据aid查询用户信息
-        Account account = accountDao.findAccountByAid(2);
+        Account account = accountDao.findAccountByAid(1);
 
         System.out.println(account);
     }
 
     @Test
     public void testFindUserById(){
-        User user = userDao.findUserById(13);
+        User user = userDao.findUserById(63);
 
         System.out.println(user);
     }

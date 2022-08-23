@@ -50,7 +50,7 @@ public class TestMyBatis {
 
     @Test
     public void testFindUserById(){
-        User user = userDao.findUserById(63);
+        User user = userDao.findUserById(2);
 
         System.out.println(user);
     }

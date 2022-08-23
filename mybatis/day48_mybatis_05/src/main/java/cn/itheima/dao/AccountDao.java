@@ -24,7 +24,7 @@ public interface AccountDao {
             @Result(column = "money",property = "money"),
             @Result(column = "uid",property = "uid"),
             /*进行一对一的查询映射，调用外部查询*/
-            @Result(one = @One(select = "com.itheima.dao.UserDao.findUserById",fetchType = FetchType.LAZY),column = "uid",property = "user")
+            @Result(one = @One(select = "cn.itheima.dao.UserDao.findUserById",fetchType = FetchType.LAZY),column = "uid",property = "user")
     })
     @Select("select * from account where aid=#{aid}")
     Account findAccountByAid(int aid);

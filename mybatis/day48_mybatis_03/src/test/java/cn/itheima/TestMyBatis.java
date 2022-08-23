@@ -39,7 +39,7 @@ public class TestMyBatis {
         //以及缓存是存在于sqlSession对象中的，那么一级缓存会在什么时候清除呢?
         //1. sqlSession调用commit()方法  2. sqlSession调用clearCache()方法  3. sqlSession调用close()方法  4.当前表执行增删改的SQL语句
 
-        userDao.addUser(new User(null,"小泽老师",new Date(),"女","东京"));
+        userDao.addUser(new User(null,"迷心老师",new Date(),"女","东京"));
 
         List<User> userList2 = sqlSession.getMapper(UserDao.class).findAll();
         System.out.println(userList2);
