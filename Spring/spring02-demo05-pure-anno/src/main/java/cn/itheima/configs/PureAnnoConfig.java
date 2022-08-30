@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import;
  *          自配置类的@Configuration 可以省略
  */
 @Configuration
-@ComponentScan({"com.itheima"})
+@ComponentScan({"cn.itheima"})
 @Import(value={JdbcAnnoConfig.class,RedisAnnoConfig.class})
 public class PureAnnoConfig {
 
