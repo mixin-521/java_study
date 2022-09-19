@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Import;
  *          如果要导入多个配置类,value可以省略,{} 不能省略
  *          自配置类的@Configuration 可以省略
  */
-@Configuration
-@ComponentScan({"cn.itheima"})
+@Configuration    //告诉IOC容器这是一个配置类
+@ComponentScan({"cn.itheima"})  //开启包扫描
 @Import(value={JdbcAnnoConfig.class,RedisAnnoConfig.class})
 public class PureAnnoConfig {
 

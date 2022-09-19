@@ -27,7 +27,6 @@ public class JunitTest {
     public void fun01() throws Exception {
         List<Account> list = accountService.findAll();
         System.out.println(list);
-
     }
 
 }

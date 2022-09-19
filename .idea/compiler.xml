@@ -47,6 +47,8 @@
     <bytecodeTargetLevel>
       <module name="my_mybatis_demo_01" target="1.5" />
       <module name="spring02-demo02-anno" target="1.8" />
+      <module name="Spring03_1" target="1.8" />
+      <module name="Spring_1" target="1.8" />
       <module name="Spring_zhujie" target="1.5" />
       <module name="zhujie" target="1.8" />
     </bytecodeTargetLevel>
