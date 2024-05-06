@@ -9,14 +9,11 @@
      constructor-arg.name  要注入的属性名称
      constructor-arg.namevalue 要注入的值
     -->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="cn.itheima.service.impl.AccountServiceImpl">
         <constructor-arg name="username" value="张三"/>
         <constructor-arg name="age" value="18"/>
     </bean>
-<!--
 
- Create default context
--->
     <!--
    setter-注入简单类型
        1 定义属性
@@ -24,7 +21,7 @@
     property.name 要注入的属性名
     property.value 要注入的属性值
    -->
-    <bean id="accountService02" class="com.itheima.service.impl.AccountServiceImpl02">
+    <bean id="accountService02" class="cn.itheima.service.impl.AccountServiceImpl02">
         <property name="username" value="李四"/>
         <property name="age" value="80"/>
     </bean>
@@ -36,7 +33,7 @@
     property.name 要注入的属性名
     property.array.value 要注入的属性值
    -->
-    <bean id="accountService03" class="com.itheima.service.impl.AccountServiceImpl03">
+    <bean id="accountService03" class="cn.itheima.service.impl.AccountServiceImpl03">
         <!--<property name="hobbys" value="代码,篮球,足球"></property>-->
         <property name="hobbys">
             <array>
@@ -56,7 +53,7 @@
         property.map.key 要注入的map的键
         property.map.value 要注入的map的值
    -->
-    <bean id="accountService04" class="com.itheima.service.impl.AccountServiceImpl04">
+    <bean id="accountService04" class="cn.itheima.service.impl.AccountServiceImpl04">
         <property name="map">
             <map>
                 <entry key="aa1" value="aa2"/>
@@ -76,8 +73,8 @@
         property.map.key 要注入的map的键
         property.map.value 要注入的map的值
    -->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"/>
-    <bean id="accountService05" class="com.itheima.service.impl.AccountServiceImpl05">
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl"/>
+    <bean id="accountService05" class="cn.itheima.service.impl.AccountServiceImpl05">
         <property name="accountDao" ref="accountDao"/>
     </bean>
 
@@ -85,16 +82,16 @@
        p名称空间-注入简单类型
 
    -->
-    <bean id="accountService06" class="com.itheima.service.impl.AccountServiceImpl06" p:age="20" p:username="王五"></bean>
+    <bean id="accountService06" class="cn.itheima.service.impl.AccountServiceImpl06" p:age="20" p:username="王五"></bean>
 
     <!--
           SP el表达式-注入简单类型
       -->
-    <bean id="user" class="com.itheima.pojo.User">
+    <bean id="user" class="cn.itheima.pojo.User">
         <property name="username" value="1111"/>
         <property name="age" value="60"/>
     </bean>
-    <bean id="accountService07" class="com.itheima.service.impl.AccountServiceImpl07">
+    <bean id="accountService07" class="cn.itheima.service.impl.AccountServiceImpl07">
         <!--<property name="username" value="#{'赵六'}"/>-->
         <property name="username" value="#{user.username}"/>
         <property name="age" value="#{1920}"/>

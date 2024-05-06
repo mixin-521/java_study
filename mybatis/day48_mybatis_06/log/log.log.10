@@ -1,0 +1,12 @@
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.datasource.pooled.PooledDataSource.forceCloseAll(PooledDataSource.java:335)
+PooledDataSource forcefully closed/removed all connections.
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:222)
+Find JAR URL: file:/D:/Git/java_study/mybatis/day48_mybatis_06/target/classes/cn/itheima/dao
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.io.DefaultVFS.findJarForResource(DefaultVFS.java:248)
+Not a JAR: file:/D:/Git/java_study/mybatis/day48_mybatis_06/target/classes/cn/itheima/dao
+[DEBUG][2022-08-23 21:52:17]org.apache.ibatis.io.DefaultVFS.list(DefaultVFS.java:102)
+Reader entry: AccountDao.class

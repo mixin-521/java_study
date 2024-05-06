@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--注册accountService-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl">
+    <bean id="accountService" class="cn.itheima.service.impl.AccountServiceImpl">
         <property name="accountDao" ref="accountDao"/>
     </bean>
     <!--注册accountDao-->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl">
         <property name="queryRunner" ref="queryRunner"/>
     </bean>
     <!--注册queryRunner-->

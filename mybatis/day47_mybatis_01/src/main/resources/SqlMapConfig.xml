@@ -24,6 +24,6 @@
 
     <!--加载映射配置文件-->
     <mappers>
-        <package name="com.itheima.dao"/>
+        <package name="cn.itheima.dao"/>
     </mappers>
 </configuration>
