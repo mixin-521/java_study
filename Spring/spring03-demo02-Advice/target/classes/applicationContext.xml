@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!--注册dao-->
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl"></bean>
+    <!--注册service-->
+    <bean id="accountService" class="cn.itheima.service.impl.AccountServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+    </bean>
+    <!--注册通知所在的类-->
+    <bean id="myAscept" class="cn.itheima.utils.MyAscept"/>
+    <!--配置通知-->
+    <aop:config>
+        <!--配置切入点
+            execution(* com.xyz.myapp.service.*.*(..))
+            第一个* 方法返回值
+            第二个* com.xyz.myapp.service这个包下面的所有的类
+            第三个* com.xyz.myapp.service这个包下面的所有类的所有方法
+            .. 方法
+         aop:pointcut.id  切入点的唯一标识符
+         aop:pointcut.expression  切入点的表达式,可以定义某些包下的某些类的某些方法为切入点
+
+        -->
+        <aop:pointcut id="pointcut01" expression="execution(* com.itheima.dao.impl.*.save(..))"/>
+        <!--
+            execution(* com.xyz.myapp.service.*.*(..))
+            第一个* 方法的返回值
+            第二个* com.xyz.myapp.service这个包下面的所有类
+            第三个* com.xyz.myapp.service这个包下面的所有类的所有方法
+            ..
+        -->
+        <aop:pointcut id="pointcut02" expression="execution(* com.itheima.dao.impl.*.delete(..))"/>
+        <!--
+            第一个 * 方法的返回值
+            第二个 * com.xyz.myapp.service下面的所有类
+            第三个 * com.xyz.myapp.service下面的所有类的所有方法
+
+        -->
+
+        <aop:pointcut id="pointcut03" expression="execution(* com.itheima.dao.impl.*.findAll(..))"/>
+
+        <aop:pointcut id="pointcut04" expression="execution(* com.itheima.dao.impl.*.update(..))"/>
+
+        <aop:pointcut id="pointcut05" expression="execution(* com.itheima.dao.impl.*.findById(..))"/>
+        <!--配置切面
+        aop:aspect.ref:通知所在的JavaBean的id
+        -->
+        <aop:aspect ref="myAscept">
+            <!--配置前置通知
+            aop:before.method: 要放到切入点的代码所在的方法名
+            aop:before.pointcut-ref: 切入点的id
+            -->
+            <aop:before method="checkRights" pointcut-ref="pointcut01"/>
+            <!--配置后置通知
+                returning:通知所在的方法的形参名
+            -->
+            <aop:after-returning method="showLog" pointcut-ref="pointcut02" returning="result"/>
+            <!--配置环绕通知-->
+            <aop:around method="showCostTime" pointcut-ref="pointcut03"/>
+            <!--配置异常通知
+             throwing:通知所在的方法的形参名
+            -->
+            <aop:after-throwing method="showErrMsg" pointcut-ref="pointcut04" throwing="e1"/>
+            <!--定义最终通知-->
+            <aop:after method="showFinalMsg" pointcut-ref="pointcut05"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
