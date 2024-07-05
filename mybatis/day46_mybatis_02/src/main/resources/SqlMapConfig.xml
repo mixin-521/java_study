@@ -6,6 +6,8 @@
     <!--
         使用properties标签获取外部属性文件中的属性
         开始先引入外部的配置文件
+
+        这里就是引入数据库的配置文件
     -->
     <properties resource="jdbcinfo.properties">
     </properties>
