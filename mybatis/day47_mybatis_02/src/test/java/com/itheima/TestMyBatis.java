@@ -51,14 +51,14 @@ public class TestMyBatis {
     @Test
     public void testFindAccountByAid(){
         //调用AccountDao对象的方法，根据aid查询用户信息
-        Account account = accountDao.findAccountByAid(2);
+        Account account = accountDao.findAccountByAid(1);
 
         System.out.println(account);
     }
 
     @Test
     public void testFindUserById(){
-        User user = userDao.findUserById(13);
+        User user = userDao.findUserById(63);
 
         System.out.println(user);
     }

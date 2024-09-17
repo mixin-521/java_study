@@ -45,6 +45,6 @@
         <!--<mapper resource="com/itheima/dao/UserDao.xml"/>-->
         <!--使用包扫描加载所有的映射配置文件-->
 <!--        使用包扫描引入dao-->
-        <package name="com.itheima.dao"/>
+        <package name="cn.itheima.dao"/>
     </mappers>
 </configuration>

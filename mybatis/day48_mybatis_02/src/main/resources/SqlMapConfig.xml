@@ -12,7 +12,7 @@
     </settings>
     <!--别名配置-->
     <typeAliases>
-        <package name="com.itheima.pojo"/>
+        <package name="cn.itheima.pojo"/>
     </typeAliases>
     <!--环境配置-->
     <environments default="mysql">
@@ -29,6 +29,6 @@
 
     <!--加载映射配置文件 这个下面能找到对应xml不? -->
     <mappers>
-        <package name="com.itheima.dao"/>
+        <package name="cn.itheima.dao"/>
     </mappers>
 </configuration>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <beans>
-    <bean id="accountDao" class="com.AccountDaoImpl"/>
-    <bean id="accountService" class="com.AccountServiceImpl"/>
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl"/>
+    <bean id="accountService" class="cn.itheima.service.impl.AccountServiceImpl"/>
 </beans>

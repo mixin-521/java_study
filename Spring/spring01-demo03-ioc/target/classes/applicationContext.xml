@@ -14,10 +14,10 @@
         bean.init-method: 初始化方法
         bean.destroy-method: 销毁方法
     -->
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl" scope="singleton" init-method="initMethod" destroy-method="destoryMethod"/>
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl" init-method="initMethod"/>
+    <bean id="accountDao" class="cn.itheima.dao.impl.AccountDaoImpl" scope="singleton" init-method="initMethod" destroy-method="destoryMethod"/>
+    <bean id="accountService" class="cn.itheima.service.impl.AccountServiceImpl" init-method="initMethod"/>
 
-    <bean id="instanceFactory" class="com.itheima.utils.InstanceFactory"/>
+    <bean id="instanceFactory" class="cn.itheima.utils.InstanceFactory"/>
 
     <bean id="accountService02" factory-bean="instanceFactory" factory-method="getBean"/>
 

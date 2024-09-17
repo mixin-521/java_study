@@ -1,0 +1,6 @@
+[DEBUG][2022-08-23 21:52:39]org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:159)
+<==      Total: 1
+[DEBUG][2022-08-23 21:52:39]org.apache.ibatis.transaction.jdbc.JdbcTransaction.close(JdbcTransaction.java:91)
+Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@9a7504c]
+[DEBUG][2022-08-23 21:52:39]org.apache.ibatis.datasource.pooled.PooledDataSource.pushConnection(PooledDataSource.java:363)
+Returned connection 161960012 to pool.
